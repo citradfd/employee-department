@@ -50,7 +50,7 @@ class pegawai extends Controller
     {
         $Parameter = [
             'Pegawai' => pegawai_model::find($ID),
-        -    'ID' => $ID,
+            'ID' => $ID,
             'departemen' => DB::table('departemen')->get(),
         ];
         return view('editData', $Parameter);
